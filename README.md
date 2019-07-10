@@ -16,7 +16,7 @@ Returns a single random quote from the database
 
 #### Request
 ```http
-https://rowing-api.herokuapp.com/random
+https://rowing-quotes-api.herokuapp.com/random
 ```
 #### Response
 ```ts
@@ -30,17 +30,17 @@ https://rowing-api.herokuapp.com/random
 
 ### Get x amount of quotes
 ```http
-https://rowing-api.herokuapp.com/random/:amount
+https://rowing-quotes-api.herokuapp.com/random/:amount
 ```
 
 ### Get the quote with the id of x
 ```http
-https://rowing-api.herokuapp.com/quote/:id
+https://rowing-quotes-api.herokuapp.com/quote/:id
 ```
 
 ### Get all the available quotes
 ```http
-GET https://rowing-api.herokuapp.com/all
+https://rowing-quotes-api.herokuapp.com/all
 ```
 
 
@@ -49,7 +49,7 @@ GET https://rowing-api.herokuapp.com/all
 **Get a random quote using fetch**
 
 ```js
-fetch('https://rowing-api.herokuapp.com/random')
+fetch('https://rowing-quotes-api.herokuapp.com/random')
   .then(response => response.json())
   .then(data => {
     console.log(`${data.quote} —${data.author}`)
@@ -60,7 +60,7 @@ fetch('https://rowing-api.herokuapp.com/random')
 
 ```js
 async function randomQuote() {
-  const response = await fetch('https://rowing-api.herokuapp.com/random')
+  const response = await fetch('https://rowing-quotes-api.herokuapp.com/random')
   const data = await response.json()
   console.log(`${data.quote} —${data.author}`)
 }
@@ -81,3 +81,7 @@ $ yarn dev
 ## Contributing
 
 Pull requests and feedback are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT]([https://github.com/vincentdoerig/rowing-quotes-api/blob/master/LICENSE])

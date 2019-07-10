@@ -64,7 +64,7 @@
   <h2>Examples</h2>
   <h4>Get a random quote using the fetch API</h4>
   <pre>
-    <code>fetch('https://rowing-api.herokuapp.com/random')
+    <code>fetch('https://rowing-quotes-api.herokuapp.com/random')
         .then(response => response.json())
         .then(data => {
           console.log(`${data.quote} —${data.author}`)
@@ -73,13 +73,13 @@
   <h4>Get a random quote using async/await</h4>
   <pre>
     <code>async function randomQuote() {
-        const response = await fetch('https://rowing-api.herokuapp.com/random')
+        const response = await fetch('https://rowing-quotes-api.herokuapp.com/random')
         const data = await response.json()
         console.log(`${data.quote} —${data.author}`)
       }</code>
   </pre>
   <br />
-  <p><a href="https://github.com/vincentdoerig/rowing-api">Source</a></p>
+  <p><a href="https://github.com/vincentdoerig/rowing-quotes-api">Source</a></p>
 </body>
 
 </html>
