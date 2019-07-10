@@ -84,4 +84,4 @@ Pull requests and feedback are welcome. For major changes, please open an issue 
 
 ## License
 
-[MIT]([https://github.com/vincentdoerig/rowing-quotes-api/blob/master/LICENSE])
+[MIT](https://github.com/vincentdoerig/rowing-quotes-api/blob/master/LICENSE)
