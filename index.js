@@ -1,12 +1,13 @@
 const express = require('express')
-const rateLimit = require("express-rate-limit")
+const rateLimit = require('express-rate-limit')
+const cors = require('cors')
 const {
   randomQuote,
   quoteById,
   allQuotes,
   randomQuotes,
-} = require('./handlers');
-const app = express();
+} = require('./handlers')
+const app = express()
 
 const limiter = rateLimit({
   windowMs: 10 * 60 * 1000,
@@ -14,11 +15,13 @@ const limiter = rateLimit({
   message: {
     error: 'Too many requests, please try again later.'
   }
-});
+})
 
-app.enable("trust proxy");
-app.set('json spaces', 4);
-app.use(limiter);
+app.enable('trust proxy')
+app.set('json spaces', 4)
+app.use(limiter)
+
+app.use(cors())
 
 app.use(express.static('views'))
 

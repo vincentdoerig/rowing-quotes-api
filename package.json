@@ -6,6 +6,7 @@
   "author": "Vincent Dörig <dvincdt@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.16.4",
     "express-rate-limit": "^3.5.0"
   },
