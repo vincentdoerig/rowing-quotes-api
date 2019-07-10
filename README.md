@@ -52,7 +52,7 @@ GET https://rowing-api.herokuapp.com/all
 fetch('https://rowing-api.herokuapp.com/random')
   .then(response => response.json())
   .then(data => {
-    console.log(`${data.quote}—${data.author}`)
+    console.log(`${data.quote} —${data.author}`)
   })
 ```
 
@@ -62,7 +62,7 @@ fetch('https://rowing-api.herokuapp.com/random')
 async function randomQuote() {
   const response = await fetch('https://rowing-api.herokuapp.com/random')
   const data = await response.json()
-  console.log(`${data.quote}—${data.author}`)
+  console.log(`${data.quote} —${data.author}`)
 }
 ```
 
