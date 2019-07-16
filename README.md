@@ -2,12 +2,6 @@
 
 > An API for quotes related to rowing created with Node.js.
 
-## Install
-
-```console
-$ yarn install
-```
-
 ## Usage
 
 ### Get a random quote
@@ -66,13 +60,21 @@ async function randomQuote() {
 }
 ```
 
-## Deployment
+## Development
+
+### Install
+
+```console
+$ yarn install
+```
+
+### Deployment
 
 ```console
 $ yarn start
 ```
 
-## Development
+### Development
 
 ```console
 $ yarn dev
