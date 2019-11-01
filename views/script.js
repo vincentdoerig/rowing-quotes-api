@@ -1,6 +1,7 @@
 const quote = document.getElementById('quote');
 const author = document.getElementById('author');
 const refresh = document.getElementById('refresh');
+
 async function getRandomQuote() {
   try {
     const response = await fetch(
@@ -14,6 +15,7 @@ async function getRandomQuote() {
     author.innerText = '';
   }
 }
+
 document.addEventListener('DOMContentLoaded', () => {
   getRandomQuote();
 });
