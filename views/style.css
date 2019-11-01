@@ -1,0 +1,103 @@
+body {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,
+    monospace;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 10px;
+  color: #363636;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 2.2em;
+  margin-top: 0;
+  color: #000;
+}
+
+h3,
+h4 {
+  margin-bottom: 12px;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #0076d1;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+* + * section {
+  margin-top: 2.25em;
+}
+
+code {
+  background: #efefef;
+  color: #000;
+  padding: 5px;
+  border-radius: 6px;
+  padding: 10px;
+  display: block;
+  overflow-x: auto;
+  font-size: 105%;
+}
+
+.introduction {
+  margin-bottom: 12px;
+  color: #000;
+  font-weight: bold;
+}
+
+.code-example {
+  border: 2px dotted #0076d1;
+  position: relative;
+  padding: 1em;
+}
+
+blockquote {
+  font-family: Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida,
+    'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
+  margin: 0;
+  margin-top: 10px;
+}
+
+q {
+  quotes: '“' '”' '‘' '’';
+}
+
+q:before {
+  content: open-quote;
+  margin-right: 0.2rem;
+}
+
+q:after {
+  content: close-quote;
+}
+
+q:before,
+q:after {
+  color: #ccc;
+  font-size: 1.4rem;
+}
+
+cite {
+  display: block;
+  text-align: right;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: hsl(0, 0, 80%);
+}
+
+#refresh {
+  position: absolute;
+  top: -15.5px;
+  right: 20px;
+  background-color: white;
+  padding: 6px;
+  font-size: 0.85em;
+  cursor: pointer;
+}
