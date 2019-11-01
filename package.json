@@ -2,7 +2,7 @@
   "name": "rowing-api",
   "version": "1.0.0",
   "description": "An api for quotes related to rowing",
-  "main": "index.js",
+  "main": "server.js",
   "author": "Vincent Dörig <dvincdt@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -14,7 +14,7 @@
     "nodemon": "^1.19.4"
   },
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index"
+    "dev": "nodemon server.js",
+    "start": "node server"
   }
 }
