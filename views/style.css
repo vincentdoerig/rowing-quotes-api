@@ -63,10 +63,12 @@ blockquote {
     'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif;
   margin: 0;
   margin-top: 10px;
+  line-height: 1.48;
 }
 
 q {
   quotes: '“' '”' '‘' '’';
+  line-height: 0.8;
 }
 
 q:before {
