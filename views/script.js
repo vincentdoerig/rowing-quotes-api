@@ -4,9 +4,7 @@ const refresh = document.getElementById('refresh');
 
 async function getRandomQuote() {
   try {
-    const response = await fetch(
-      'https://rowing-quotes-api.herokuapp.com/random',
-    );
+    const response = await fetch('/random');
     const data = await response.json();
     quote.innerText = data.quote || data.error;
     author.innerText = '—' + (data.author || 'the server');
