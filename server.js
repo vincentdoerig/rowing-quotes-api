@@ -19,7 +19,9 @@ const limiter = rateLimit({
 
 app.enable('trust proxy');
 app.set('json spaces', 4);
-app.use(limiter);
+app.use('/random/', limiter);
+app.use('/quote/', limiter);
+app.use('/all/', limiter);
 
 app.use(cors());
 

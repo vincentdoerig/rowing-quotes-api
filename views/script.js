@@ -8,8 +8,8 @@ async function getRandomQuote() {
       'https://rowing-quotes-api.herokuapp.com/random',
     );
     const data = await response.json();
-    quote.innerText = data.quote;
-    author.innerText = '—' + data.author;
+    quote.innerText = data.quote || data.error;
+    author.innerText = '—' + (data.author || 'the server');
   } catch (e) {
     quote.innerText = `${e.message}`;
     author.innerText = '';
@@ -19,6 +19,7 @@ async function getRandomQuote() {
 document.addEventListener('DOMContentLoaded', () => {
   getRandomQuote();
 });
+
 refresh.addEventListener('click', () => {
   getRandomQuote();
 });
